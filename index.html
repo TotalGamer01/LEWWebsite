@@ -61,6 +61,17 @@
             text-decoration: none; /* Remove underline from the link */
             color: inherit; /* Inherit the text color from parent */
         }
+
+	 .js-required-bar {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +98,20 @@
         </li>
     </ul>
     <noscript>
-        <p>This website uses javascript for better functionality please enable it.</p>
+        <div class="js-required-bar">
+            This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+        </div>
     </noscript>
+
+    <!-- JavaScript to hide the message bar for users with JavaScript enabled -->
+    <script>
+        // JavaScript to hide the "JavaScript Required" message bar
+        document.addEventListener("DOMContentLoaded", function () {
+            var jsRequiredBar = document.querySelector(".js-required-bar");
+            if (jsRequiredBar) {
+                jsRequiredBar.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
