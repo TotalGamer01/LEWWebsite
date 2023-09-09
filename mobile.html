@@ -15,14 +15,15 @@
         }
 
         li.navitem {
-            float: right;
+            text-align: center;
+            margin-top: 10px;
         }
 
         li.navitem a {
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 10px 0;
             text-decoration: none;
         }
 
@@ -30,15 +31,14 @@
             background-color: #555;
         }
 
-        /* CSS for the "Don't Press" button and custom button */
+        /* CSS for the "Don't Press" button and custom buttons */
         .navitem button {
             background-color: red; /* Button background color */
             color: lightblue; /* Button text color */
-            padding: 10px 20px; /* Adjust padding for better mobile display */
+            padding: 10px 0; /* Adjust padding for better mobile display */
             border: none;
             cursor: pointer;
             margin: 0; /* Remove any margin */
-            display: block; /* Ensure it's a block element on small screens */
             width: 100%; /* Make the button span the entire screen width */
         }
 
@@ -49,6 +49,7 @@
         /* CSS for the logo image */
         .logo {
             text-align: center; /* Center the logo on small screens */
+            margin-top: 20px;
         }
 
         /* CSS to style the anchor tag */
@@ -68,10 +69,15 @@
                 <button>Don't Press</button>
             </a>
         </li>
-        <!-- Add a new button to the navigation bar -->
+        <!-- Add new buttons to the navigation bar -->
         <li class="navitem">
-            <a href="https://www.google.com/">
+            <a href="https://www.apple.com/">
                 <button>Do Press</button>
+            </a>
+        </li>
+        <li class="navitem">
+            <a href="https://www.apple.com/">
+                <button>Maybe Press??</button>
             </a>
         </li>
     </ul>
