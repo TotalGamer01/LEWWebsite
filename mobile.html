@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="giphy.gif" type="image/gif">
+    <style>
+        /* CSS for the navigation bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Background color of the navigation bar */
+            overflow: hidden;
+        }
+
+        li.navitem {
+            float: right;
+        }
+
+        li.navitem a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.navitem a:hover {
+            background-color: #555;
+        }
+
+        /* CSS for the "Don't Press" button and custom button */
+        .navitem button {
+            background-color: red; /* Button background color */
+            color: lightblue; /* Button text color */
+            padding: 10px 20px; /* Adjust padding for better mobile display */
+            border: none;
+            cursor: pointer;
+            margin: 0; /* Remove any margin */
+            display: block; /* Ensure it's a block element on small screens */
+            width: 100%; /* Make the button span the entire screen width */
+        }
+
+        .navitem button:hover {
+            background-color: darkred; /* Button background color on hover */
+        }
+
+        /* CSS for the logo image */
+        .logo {
+            text-align: center; /* Center the logo on small screens */
+        }
+
+        /* CSS to style the anchor tag */
+        .logo-link {
+            text-decoration: none; /* Remove underline from the link */
+            color: inherit; /* Inherit the text color from parent */
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.websconnect.net/" class="logo-link">
+        <img src="LEW_free-file.png" alt="Logo" class="logo" width="120" height="120">
+    </a>
+    <ul class="navbar">
+        <li class="navitem">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <button>Don't Press</button>
+            </a>
+        </li>
+        <!-- Add a new button to the navigation bar -->
+        <li class="navitem">
+            <a href="https://www.google.com/">
+                <button>Do Press</button>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
