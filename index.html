@@ -1,117 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LEW</title>
-    <link rel="icon" href="giphy.gif" type="image/gif">
-    <script>
-        // JavaScript to detect mobile devices and redirect
-        if (/Mobi|Android/i.test(navigator.userAgent)) {
-            // If the user is on a mobile device, redirect to the mobile version
-            window.location.href = "https://www.websconnect.net/mobile"; // Replace with the actual URL of your mobile version
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Luke's Blog</title>
     <style>
-        /* CSS for the navigation bar */
-        ul.navbar {
-            list-style-type: none;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141d2d;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #333; /* Background color of the navigation bar */
-            overflow: hidden;
         }
-
-        li.navitem {
-            float: right;
-        }
-
-        li.navitem a {
-            display: block;
-            color: white;
+        header {
+            background-color: #1e2a38;
+            padding: 20px;
             text-align: center;
-            padding: 14px 16px;
+        }
+        nav {
+            background-color: #122030;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
             text-decoration: none;
+            margin: 0 10px;
         }
-
-        li.navitem a:hover {
-            background-color: #555;
+        nav a:hover {
+            color: #ffa07a;
         }
-
-        /* CSS for the "Don't Press" button and custom button */
-        .navitem button {
-            background-color: red; /* Button background color */
-            color: lightblue; /* Button text color */
-            padding: 14px 16px; /* Adjust padding as needed */
-            border: none;
-            cursor: crosshair;
-            margin: 0; /* Remove any margin */
+        section {
+            padding: 20px;
         }
-
-        .navitem button:hover {
-            background-color: darkred; /* Button background color on hover */
+        .about-me,
+        .posts {
+            background-color: #1e2a38;
+            padding: 20px;
+            margin-top: 20px;
         }
-
-        /* CSS for the logo image */
-        .logo {
-            float: left;
-            margin-left: 20px; /* Adjust the margin as needed */
-        }
-
-        /* CSS to style the anchor tag */
-        .logo-link {
-            text-decoration: none; /* Remove underline from the link */
-            color: inherit; /* Inherit the text color from parent */
-        }
-
-        .js-required-bar {
-            background-color: red;
-            color: white;
+        footer {
+            background-color: #1e2a38;
             text-align: center;
             padding: 10px;
             position: fixed;
             bottom: 0;
-            left: 0;
-            right: 0;
+            width: 100%;
+        }
+        /* Light Red Color */
+        h2, h3 {
+            color: #ff7f7f;
         }
     </style>
 </head>
 <body>
-    <a href="http://www.websconnect.net/" class="logo-link">
-        <img src="LEW_free-file.png" alt="Logo" class="logo" width="70" height="70">
-    </a>
-    <ul class="navbar">
-        <li class="navitem">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                <button>Don't Press</button>
-            </a>
-        </li>
-        <!-- Add a new button to the navigation bar -->
-        <li class="navitem">
-            <a href="https://www.youtube.com/channel/UCCg3cuxJNNU9bG5Y9zTAN_A">
-                <button>LEW Gaming</button>
-            </a>
-        </li>
-        <!-- Add a new button to the navigation bar -->
-        <li class="navitem">
-            <a href="https://www.google.com/">
-                <button>Maybe Press??</button>
-            </a>
-        </li>
-    </ul>
-    <noscript>
-        <div class="js-required-bar">
-            This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.
-        </div>
-    </noscript>
 
-    <!-- JavaScript to hide the message bar for users with JavaScript enabled -->
-    <script>
-        // JavaScript to hide the "JavaScript Required" message bar
-        document.addEventListener("DOMContentLoaded", function () {
-            var jsRequiredBar = document.querySelector(".js-required-bar");
-            if (jsRequiredBar) {
-                jsRequiredBar.style.display = "none";
-            }
-        });
-    </script>
+<header>
+    <h1>Master Luke's Blog</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#posts">Posts</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Master Luke's Blog</h2>
+    <p>This is where I share my thoughts, experiences, and ideas.</p>
+</section>
+
+<section id="about" class="about-me">
+    <h2>About Me</h2>
+    <p>Hello, I am Master Luke. I am passionate about sharing my knowledge and experiences through writing. Stay tuned for more interesting posts!</p>
+</section>
+
+<section id="posts" class="posts">
+    <h2>Latest Posts</h2>
+    <article>
+        <h3>Post Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia risus in ante vestibulum, vitae mollis quam sollicitudin.</p>
+    </article>
+    <article>
+        <h3>Post Title 2</h3>
+        <p>Integer auctor, dolor nec pulvinar efficitur, lectus metus finibus lectus, non vulputate metus ante id libero.</p>
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2024 Master Luke's Blog. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
